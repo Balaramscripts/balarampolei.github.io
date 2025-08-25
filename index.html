@@ -9,35 +9,45 @@
       font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f7fa;
+      background: #f4f7fa;
       color: #333;
     }
     header {
-      background: #0073e6;
+      background: linear-gradient(135deg, #0073e6, #005bb5);
       color: white;
       padding: 40px 20px;
       text-align: center;
     }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
     header h1 {
-      margin: 0;
+      margin: 10px 0 5px;
       font-size: 2.5em;
     }
     header p {
-      margin: 8px 0 0;
+      margin: 5px 0;
       font-size: 1.1em;
     }
     section {
       max-width: 900px;
       margin: 40px auto;
-      padding: 0 20px;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
     h2 {
-      border-bottom: 2px solid #0073e6;
-      padding-bottom: 5px;
+      border-left: 5px solid #0073e6;
+      padding-left: 10px;
       color: #0073e6;
     }
     ul {
-      list-style-type: disc;
       padding-left: 20px;
     }
     footer {
@@ -54,12 +64,20 @@
     a:hover {
       text-decoration: underline;
     }
+    /* Responsive design */
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.8em; }
+      header img { width: 120px; height: 120px; }
+      section { margin: 20px; padding: 15px; }
+    }
   </style>
 </head>
 <body>
   <header>
+    <img src="6 (1).jpg" alt="Balaram Polei">
     <h1>Balaram Polei</h1>
-    <p>📍 Mumbai, India | 📧 <a href="mailto:balarampole@gmail.com" style="color:white;">balarampole@gmail.com</a> | 📱 +91-7021663349 | 🔗 <a href="https://www.linkedin.com/in/balaram-polei-sql-dba/" target="_blank" style="color:white;">LinkedIn</a></p>
+    <p>📍 Mumbai, India | 📧 <a href="mailto:balarampole@gmail.com" style="color:white;">balarampole@gmail.com</a> | 📱 +91-7021663349</p>
+    <p>🔗 <a href="https://www.linkedin.com/in/balaram-polei-sql-dba/" target="_blank" style="color:white;">LinkedIn</a></p>
   </header>
 
   <section>
@@ -87,20 +105,20 @@
     <h2>Experience</h2>
     <h3>Junior SQL Server DBA – Simple Logic IT Pvt Ltd (Aug 2023 – Present)</h3>
     <ul>
-      <li>Handled 24×7 DBA support for multiple clients: CMS Infotech, Lupin Pharmacy & Payment Banks</li>
+      <li>Handled 24×7 DBA support for CMS Infotech, Lupin Pharmacy & Payment Banks</li>
       <li>Executed Bank Downtime DR Drills with seamless failover & switchback</li>
       <li>Configured & managed Replication, Log Shipping, and Mirroring</li>
-      <li>Automated maintenance plans and monitoring using SQL Jobs & PowerShell</li>
-      <li>Optimized queries and indexes improving availability by 25%</li>
+      <li>Automated backups & monitoring with SQL Jobs & PowerShell</li>
+      <li>Improved system availability by 25% through query/index tuning</li>
     </ul>
   </section>
 
   <section>
     <h2>Key Projects</h2>
     <ul>
-      <li><b>Bank DR Drills</b> – Conducted failover/switchback with zero data loss</li>
-      <li><b>Replication Setup</b> – Implemented transactional replication for Lupin Pharmacy & CMS Infotech</li>
-      <li><b>Performance Optimization</b> – Tuned queries & indexes for Payment Banks, boosting efficiency</li>
+      <li><b>Bank DR Drills</b> – Executed failover/switchback ensuring zero data loss</li>
+      <li><b>Replication Setup</b> – Implemented Transactional Replication for Lupin Pharmacy & CMS Infotech</li>
+      <li><b>Performance Optimization</b> – Tuned queries & indexes for Payment Banks</li>
     </ul>
   </section>
 
