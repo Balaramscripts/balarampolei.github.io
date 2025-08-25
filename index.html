@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Balaram Polei | SQL Server DBA</title>
   <style>
-    /* === GLOBAL === */
     body {
       font-family: "Poppins", Arial, sans-serif;
       background: #111;
@@ -17,7 +16,7 @@
     a { color: #00c6ff; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    /* === HEADER === */
+    /* HEADER */
     header {
       background: #1c1c1c;
       text-align: center;
@@ -34,16 +33,11 @@
       object-fit: cover;
       animation: bounceIn 2s;
     }
-    header h1 {
-      font-size: 2.8em;
-      margin: 10px 0;
-    }
-    header .tagline {
-      font-size: 1.3em;
-      color: #00c6ff;
-      margin-bottom: 15px;
-    }
+    header h1 { font-size: 2.8em; margin: 10px 0; }
+    header .tagline { font-size: 1.3em; color: #00c6ff; margin-bottom: 15px; }
     header p { font-size: 1.1em; }
+
+    /* Buttons */
     .btn {
       display: inline-block;
       margin: 10px;
@@ -56,7 +50,7 @@
     }
     .btn:hover { opacity: 0.8; transform: translateY(-2px); }
 
-    /* === SECTIONS === */
+    /* Sections */
     section {
       background: #1e1e1e;
       color: #ddd;
@@ -73,7 +67,7 @@
       padding-left: 10px;
     }
 
-    /* === SKILLS === */
+    /* Skills */
     .skill { margin: 15px 0; }
     .skill-name { margin-bottom: 5px; }
     .skill-bar {
@@ -91,46 +85,26 @@
       animation: fillBar 2s forwards;
     }
 
-    /* === TIMELINE === */
-    .timeline {
-      position: relative;
-      margin: 20px 0;
-      padding-left: 40px;
-    }
+    /* Timeline */
+    .timeline { position: relative; margin: 20px 0; padding-left: 40px; }
     .timeline::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 15px;
-      width: 4px;
-      height: 100%;
+      top: 0; left: 15px;
+      width: 4px; height: 100%;
       background: #00c6ff;
     }
-    .timeline-item {
-      margin-bottom: 30px;
-      position: relative;
-    }
+    .timeline-item { margin-bottom: 30px; position: relative; }
     .timeline-item::before {
       content: "";
       position: absolute;
-      left: -25px;
-      top: 5px;
-      width: 15px;
-      height: 15px;
+      left: -25px; top: 5px;
+      width: 15px; height: 15px;
       background: #00c6ff;
       border-radius: 50%;
     }
 
-    /* === FOOTER === */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111;
-      color: #777;
-      font-size: 0.9em;
-    }
-
-    /* === ANIMATIONS === */
+    /* Animations */
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     @keyframes slideUp { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
     @keyframes bounceIn {
@@ -150,12 +124,18 @@
     <p class="tagline">SQL Server Database Administrator</p>
     <p>📍 Mumbai, India | 📧 <a href="mailto:balarampole@gmail.com">balarampole@gmail.com</a> | 📱 +91-7021663349</p>
     <p>🔗 <a href="https://www.linkedin.com/in/balaram-polei-sql-dba/" target="_blank">LinkedIn</a></p>
-    <a href="#skills" class="btn">View Skills</a>
+
+    <!-- Navigation Buttons -->
+    <a href="#about" class="btn">About Me</a>
+    <a href="#skills" class="btn">Skills</a>
+    <a href="#experience" class="btn">Experience</a>
+    <a href="#education" class="btn">Education</a>
+    <a href="#details" class="btn">Additional Details</a>
     <a href="BalaramPoleiResume.pdf" class="btn">Download Resume</a>
   </header>
 
   <!-- ABOUT -->
-  <section>
+  <section id="about">
     <h2>About Me</h2>
     <p>
       SQL Server Database Administrator with 2+ years of experience supporting Banking, Pharma, and IT clients.
@@ -167,30 +147,15 @@
   <!-- SKILLS -->
   <section id="skills">
     <h2>Core Skills</h2>
-    <div class="skill">
-      <div class="skill-name">SQL Server / T-SQL</div>
-      <div class="skill-bar"><span class="skill-fill" style="--percent:90%"></span></div>
-    </div>
-    <div class="skill">
-      <div class="skill-name">Replication / Log Shipping</div>
-      <div class="skill-bar"><span class="skill-fill" style="--percent:85%"></span></div>
-    </div>
-    <div class="skill">
-      <div class="skill-name">Performance Tuning</div>
-      <div class="skill-bar"><span class="skill-fill" style="--percent:80%"></span></div>
-    </div>
-    <div class="skill">
-      <div class="skill-name">Azure SQL / AWS RDS</div>
-      <div class="skill-bar"><span class="skill-fill" style="--percent:70%"></span></div>
-    </div>
-    <div class="skill">
-      <div class="skill-name">Automation (PowerShell, Python)</div>
-      <div class="skill-bar"><span class="skill-fill" style="--percent:65%"></span></div>
-    </div>
+    <div class="skill"><div class="skill-name">SQL Server / T-SQL</div><div class="skill-bar"><span class="skill-fill" style="--percent:90%"></span></div></div>
+    <div class="skill"><div class="skill-name">Replication / Log Shipping</div><div class="skill-bar"><span class="skill-fill" style="--percent:85%"></span></div></div>
+    <div class="skill"><div class="skill-name">Performance Tuning</div><div class="skill-bar"><span class="skill-fill" style="--percent:80%"></span></div></div>
+    <div class="skill"><div class="skill-name">Azure SQL / AWS RDS</div><div class="skill-bar"><span class="skill-fill" style="--percent:70%"></span></div></div>
+    <div class="skill"><div class="skill-name">Automation (PowerShell, Python)</div><div class="skill-bar"><span class="skill-fill" style="--percent:65%"></span></div></div>
   </section>
 
   <!-- EXPERIENCE -->
-  <section>
+  <section id="experience">
     <h2>Experience</h2>
     <div class="timeline">
       <div class="timeline-item">
@@ -208,7 +173,7 @@
   </section>
 
   <!-- EDUCATION -->
-  <section>
+  <section id="education">
     <h2>Education</h2>
     <div class="timeline">
       <div class="timeline-item">
@@ -222,12 +187,15 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>Languages: English, Hindi, Marathi, Odia</p>
-    <p>Soft Skills: Communication | Client Handling | Problem-Solving</p>
-    <p>© 2025 Balaram Polei</p>
-  </footer>
+  <!-- ADDITIONAL DETAILS -->
+  <section id="details">
+    <h2>Additional Details</h2>
+    <ul>
+      <li><b>Languages:</b> English, Hindi, Marathi, Odia</li>
+      <li><b>Soft Skills:</b> Communication, Client Handling, Problem-Solving</li>
+      <li><b>Interests:</b> Cloud Databases, Automation, Trading, Open Source</li>
+    </ul>
+  </section>
 
 </body>
 </html>
