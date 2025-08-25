@@ -5,88 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Balaram Polei | SQL Server DBA</title>
   <style>
-    /* Global */
+    /* === GLOBAL === */
     body {
-      font-family: "Segoe UI", Arial, sans-serif;
+      font-family: "Poppins", Arial, sans-serif;
+      background: #111;
+      color: #eee;
       margin: 0;
       padding: 0;
-      background: #f4f7fa;
-      color: #333;
       scroll-behavior: smooth;
     }
-    a { color: #0073e6; text-decoration: none; }
+    a { color: #00c6ff; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    /* Header */
+    /* === HEADER === */
     header {
-      background: linear-gradient(135deg, #0073e6, #005bb5);
-      color: white;
+      background: #1c1c1c;
       text-align: center;
-      padding: 60px 20px;
-      position: relative;
-      animation: fadeIn 1.5s ease-in-out;
+      padding: 70px 20px;
+      border-bottom: 3px solid #00c6ff;
+      animation: fadeIn 2s ease-in-out;
     }
     header img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border: 5px solid white;
+      border: 4px solid #00c6ff;
       margin-bottom: 15px;
       object-fit: cover;
       animation: bounceIn 2s;
     }
     header h1 {
-      margin: 10px 0 5px;
       font-size: 2.8em;
+      margin: 10px 0;
     }
-    header p { font-size: 1.2em; }
-    header .btn {
+    header .tagline {
+      font-size: 1.3em;
+      color: #00c6ff;
+      margin-bottom: 15px;
+    }
+    header p { font-size: 1.1em; }
+    .btn {
       display: inline-block;
-      margin: 15px 10px 0;
-      padding: 10px 20px;
-      border-radius: 5px;
-      background: white;
-      color: #0073e6;
+      margin: 10px;
+      padding: 12px 25px;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #00c6ff, #0073e6);
+      color: white;
       font-weight: bold;
       transition: 0.3s;
     }
-    header .btn:hover { background: #eee; }
+    .btn:hover { opacity: 0.8; transform: translateY(-2px); }
 
-    /* Sections */
+    /* === SECTIONS === */
     section {
-      max-width: 1000px;
+      background: #1e1e1e;
+      color: #ddd;
       margin: 40px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      padding: 25px;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
       animation: slideUp 1s ease-in-out;
     }
     h2 {
-      border-left: 5px solid #0073e6;
+      color: #00c6ff;
+      border-left: 5px solid #00c6ff;
       padding-left: 10px;
-      color: #0073e6;
     }
 
-    /* Skills Progress Bars */
-    .skill { margin: 10px 0; }
+    /* === SKILLS === */
+    .skill { margin: 15px 0; }
     .skill-name { margin-bottom: 5px; }
     .skill-bar {
       width: 100%;
-      background: #eee;
+      background: #333;
       border-radius: 20px;
       overflow: hidden;
     }
     .skill-fill {
       display: block;
       height: 20px;
-      background: linear-gradient(90deg, #0073e6, #00c6ff);
+      background: linear-gradient(90deg, #00c6ff, #0073e6);
       width: 0;
       border-radius: 20px;
       animation: fillBar 2s forwards;
     }
 
-    /* Timeline */
+    /* === TIMELINE === */
     .timeline {
       position: relative;
       margin: 20px 0;
@@ -99,7 +104,7 @@
       left: 15px;
       width: 4px;
       height: 100%;
-      background: #0073e6;
+      background: #00c6ff;
     }
     .timeline-item {
       margin-bottom: 30px;
@@ -112,22 +117,22 @@
       top: 5px;
       width: 15px;
       height: 15px;
-      background: #0073e6;
+      background: #00c6ff;
       border-radius: 50%;
     }
 
-    /* Footer */
+    /* === FOOTER === */
     footer {
       text-align: center;
-      background: #222;
-      color: #ccc;
       padding: 20px;
-      margin-top: 40px;
+      background: #111;
+      color: #777;
+      font-size: 0.9em;
     }
 
-    /* Animations */
+    /* === ANIMATIONS === */
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-    @keyframes slideUp { from { transform: translateY(50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    @keyframes slideUp { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
     @keyframes bounceIn {
       0% { transform: scale(0.5); opacity: 0; }
       60% { transform: scale(1.2); opacity: 1; }
@@ -142,8 +147,9 @@
   <header>
     <img src="6 (1).jpg" alt="Balaram Polei">
     <h1>Balaram Polei</h1>
-    <p>📍 Mumbai, India | 📧 <a href="mailto:balarampole@gmail.com" style="color:white;">balarampole@gmail.com</a> | 📱 +91-7021663349</p>
-    <p>🔗 <a href="https://www.linkedin.com/in/balaram-polei-sql-dba/" target="_blank" style="color:white;">LinkedIn</a></p>
+    <p class="tagline">SQL Server Database Administrator</p>
+    <p>📍 Mumbai, India | 📧 <a href="mailto:balarampole@gmail.com">balarampole@gmail.com</a> | 📱 +91-7021663349</p>
+    <p>🔗 <a href="https://www.linkedin.com/in/balaram-polei-sql-dba/" target="_blank">LinkedIn</a></p>
     <a href="#skills" class="btn">View Skills</a>
     <a href="BalaramPoleiResume.pdf" class="btn">Download Resume</a>
   </header>
